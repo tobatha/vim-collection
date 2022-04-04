@@ -7,15 +7,12 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-tree.lua'
 
 call plug#end()
 
-let g:airline_theme='dracula'
-let mapleader=';'
-let NERDTreeShowHidden=1
+let g:airline_theme='google_dark'
+let mapleader
 
 inoremap ;; <Esc>
-
-nnoremap <silent> <leader>n :NERDTreeToggle<CR>
-nnoremap <silent> <leader>, :NERDTreeFocus<CR>
