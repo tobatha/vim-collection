@@ -2,6 +2,8 @@ set number
 set termguicolors
 set ignorecase
 set smartcase
+set encoding=utf8
+set autochdir
 
 syntax on
 
@@ -19,6 +21,8 @@ let g:airline_theme='google_dark'
 let mapleader=';'
 inoremap ;; <Esc>
 
+let g:airline_powerline_fonts=1
+let g:NERDTreeChDirMode=2
 autocmd VimEnter * NERDTree | wincmd p
 
 nnoremap <leader>n :NERDTreeToggle<CR>
