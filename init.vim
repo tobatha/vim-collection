@@ -4,6 +4,8 @@ set ignorecase
 set smartcase
 set encoding=utf8
 set autochdir
+set tabstop=4
+set shiftwidth=4
 
 syntax on
 
