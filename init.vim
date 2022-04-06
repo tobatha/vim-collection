@@ -17,8 +17,6 @@ set smarttab
 set tabstop=4
 set shiftwidth=4
 
-syntax on
-
 call plug#begin()
 
 Plug 'morhetz/gruvbox'
