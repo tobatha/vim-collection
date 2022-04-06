@@ -1,9 +1,19 @@
+syntax on
 set number
-set termguicolors
+set ruler
+set linespace=0
+set showcmd
+set showmode
+set noswapfile
+set nobackup
+set encoding=utf-8
+set autoread
+set autowrite
 set ignorecase
 set smartcase
-set encoding=utf8
-set autochdir
+set autoindent
+set magic
+set smarttab
 set tabstop=4
 set shiftwidth=4
 
@@ -19,9 +29,20 @@ Plug 'preservim/nerdtree'
 
 call plug#end()
 
-let g:airline_theme='google_dark'
-let mapleader=';'
-inoremap ;; <Esc>
+colorscheme gruvbox
+
+if (empty($TMUX))
+  if (has("nvim"))
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+endif
+
+let g:airline_theme='molokai'
+let mapleader="\<Space>"
+inoremap jj <Esc>
 
 let g:airline_powerline_fonts=1
 let g:NERDTreeChDirMode=2
