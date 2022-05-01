@@ -1,0 +1,38 @@
+"vim.easymotion": true,
+"vim.incsearch": true,
+"vim.useSystemClipboard": true,
+"vim.useCtrlKeys": true,
+"vim.insertModeKeyBindings": [
+    {
+        "before": ["j", "j"],
+        "after": ["<Esc>"],
+    }
+],
+"vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+},
+"vim.normalModeKeyBindingsNonRecursive": [
+    {
+        "before": ["S-Tab"],
+        "after": [],
+        "commands": [
+            {
+                "command": "editor.action.outdentLines",
+                "args": []
+            }
+        ]
+    },
+    {
+        "before": ["Tab"],
+        "after": [],
+        "commands": [
+            {
+                "command": "editor.action.indentLines",
+                "args": []
+            }
+        ]
+    },
+],
+
+
