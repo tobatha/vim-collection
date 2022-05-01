@@ -15,23 +15,39 @@
 "vim.normalModeKeyBindingsNonRecursive": [
     {
         "before": ["S-Tab"],
-        "after": [],
-        "commands": [
-            {
-                "command": "editor.action.outdentLines",
-                "args": []
-            }
-        ]
+        "commands": ["editor.action.outdentLines"],
     },
     {
         "before": ["Tab"],
-        "after": [],
-        "commands": [
-            {
-                "command": "editor.action.indentLines",
-                "args": []
-            }
-        ]
+        "commands": ["editor.action.indentLines"],
+    },
+    {
+        "before": ["∆"],
+        "commands": ["editor.action.moveLinesDownAction"],
+    },
+    {
+        "before": ["˚"],
+        "commands": ["editor.action.moveLinesUpAction"],
+    },
+],
+"vim.insertModeKeyBindingsNonRecursive": [
+    {
+        "before": ["∆"],
+        "commands": ["editor.action.moveLinesDownAction"],
+    },
+    {
+        "before": ["˚"],
+        "commands": ["editor.action.moveLinesUpAction"],
+    },
+],
+"vim.visualModeKeyBindingsNonRecursive": [
+    {
+        "before": ["∆"],
+        "commands": ["editor.action.moveLinesDownAction"],
+    },
+    {
+        "before": ["˚"],
+        "commands": ["editor.action.moveLinesUpAction"],
     },
 ],
 
