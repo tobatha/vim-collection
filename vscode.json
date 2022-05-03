@@ -99,4 +99,12 @@
         "command": "cursorUp",
         "when": "textInputFocus && vim.active && vim.mode == 'Insert'",
     },
+        {
+        "key": "alt+n",
+        "command": "explorer.newFile",
+    },
+    {
+        "key": "alt+m",
+        "command": "explorer.newFolder",
+    },
 ]
